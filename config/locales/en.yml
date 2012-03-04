@@ -17,7 +17,6 @@ en:
   head:
     text: Hackerspace
     p:
-      1: GNU is a Unix-like operating system that is free software — it respects your freedom. You can install Linux-based versions of GNU which are entirely free software.
-      2: The GNU Project was launched in 1984 to develop the GNU system. The name "GNU" is a recursive acronym for "GNU's Not Unix!". "GNU" is pronounced g'noo, as one syllable, like saying "grew" but replacing the r with n.
-      3: A Unix-like operating system is a software collection of applications, libraries, and developer tools, plus a program to allocate resources and talk to the hardware, known as a kernel.
-      4: The Hurd, GNU's own kernel, is some way from being ready for daily use. Thus, GNU is typically used today with a kernel called Linux. This combination is the GNU/Linux operating system. GNU/Linux is used by millions, though many call it "Linux" by mistake.
+      1: We are a group of people with an interest in electronics and computing, who meet to share and work on our ideas. If you share this interest, you are welcome to come along, and see what we do! You do not need to be skilled in technical matters - we have people attend whose skills range from textile art to designers of computer circuit boards.
+      2: You can also sign up to our mailing list to find out what we do.
+      3: We are a part of the international Hackerspaces community.

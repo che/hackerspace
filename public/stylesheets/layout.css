@@ -188,6 +188,8 @@ body
 }
 
 
+
+
 #p_data
 {
   z-index: 10;
@@ -217,11 +219,41 @@ body
   position: relative;
   background: none;
   padding: 0px;
-  margin: 22px 48px 22px 48px;
+  margin: 44px 48px 22px 48px;
   text-decoration: none;
   text-transform: none;
   text-align: left;
 }
+#t_head
+{
+  font-family: Arial, "Lucida Sans Unicode", Verdana, sans-serif !important;
+  margin: 0px 0px 22px 0px;
+  padding: 0px;
+  background: none;
+  border: none;
+  cursor: default;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: left;
+  line-height: 20px;
+}
+a.head
+{
+  font-family: Arial, "Lucida Sans Unicode", Verdana, sans-serif !important;
+  margin: 0px;
+  padding: 0px;
+  background: none;
+  border: none;
+  cursor: default;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 16px !important;
+  line-height: 20px;
+}
+
+
 
 #p_cprt
 {
