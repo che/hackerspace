@@ -1,0 +1,34 @@
+-# encoding: utf-8
+!!!
+%html{:xmlns => 'http://www.w3.org/1999/xhtml', :lang => @locale, 'xml:lang' => @locale}
+ %head
+  %title #{HACKERSPACE::CONFIGURATION[:locales][@locale][:title]}
+  %meta{'http-equiv' => 'content-type', :content => "text/html; charset=#{HACKERSPACE::ENCODING_DEFAULT}"}
+  %meta{'http-equiv' => 'content-language', :content => @locale}
+  %meta{:name => 'description', :content => HACKERSPACE::CONFIGURATION[:locales][@locale][:description]}
+  %meta{:name => 'keywords', :content => HACKERSPACE::CONFIGURATION[:locales][@locale][:keywords]}
+  %link{:rel => 'icon', :type => 'image/x-icon', :href => "/images/#{HACKERSPACE::NAME}_icon.png"}
+  %link{:rel => 'stylesheet', :href => '/stylesheets/layout.css', :media => 'all', :type => 'text/css'}
+ %body
+  %div#p_head
+   %div#head
+    %div#p_logo
+     %div#p_txt
+      - for i in HACKERSPACE::CONFIGURATION[:locales][@locale][:logo][:text].keys.sort
+       %a.txt{:href => HACKERSPACE::SEPARATOR + @locale}#{HACKERSPACE::CONFIGURATION[:locales][@locale][:logo][:text][i]}
+    %div#p_menu
+     %div#menu
+      - for i in HACKERSPACE::CONFIGURATION[:locales][@locale][:menu].keys.sort
+       %a.menu{:href => HACKERSPACE::SEPARATOR + @locale}#{HACKERSPACE::CONFIGURATION[:locales][@locale][:menu][i]}
+  %div#p_data
+   %div#data
+    %div#head
+     %a.head #{HACKERSPACE::CONFIGURATION[:locales][@locale][:head][:text]}
+    - for i in HACKERSPACE::CONFIGURATION[:locales][@locale][:head][:p].keys.sort
+     %p #{HACKERSPACE::CONFIGURATION[:locales][@locale][:head][:p][i]}
+  %div#p_cprt
+   - if HACKERSPACE::CONFIGURATION[:foundation_year] == Time.now.year
+    %a.c &copy; #{HACKERSPACE::CONFIGURATION[:foundation_year]} #{HACKERSPACE::NAME.upcase}.
+   - else
+    %a.c &copy; #{HACKERSPACE::CONFIGURATION[:foundation_year]}-#{Time.now.year} #{HACKERSPACE::NAME.upcase}.
+- remove_instance_variable(:@locale)

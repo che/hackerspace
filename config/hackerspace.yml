@@ -1,0 +1,9 @@
+hackerspace:
+  domain: by
+  html: html5
+  phone: +375 29 3179210
+  email: info
+  foundation_year: 2012
+  locale:
+    default: en
+    list: en

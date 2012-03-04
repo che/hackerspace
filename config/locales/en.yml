@@ -1,0 +1,23 @@
+en:
+  name: english
+  title: Welcome to hackerspace in Minsk
+  description: Site of hackerspace in Minsk
+  keywords: hackerspace minsk belarus
+  logo:
+    text:
+      1: Hackerspace
+      2: community
+      3: in Minsk
+    color: blue red red
+  menu:
+    1: Wiki
+    2: Mail list
+    3: IRC
+    4: About us
+  head:
+    text: Hackerspace
+    p:
+      1: GNU is a Unix-like operating system that is free software — it respects your freedom. You can install Linux-based versions of GNU which are entirely free software.
+      2: The GNU Project was launched in 1984 to develop the GNU system. The name "GNU" is a recursive acronym for "GNU's Not Unix!". "GNU" is pronounced g'noo, as one syllable, like saying "grew" but replacing the r with n.
+      3: A Unix-like operating system is a software collection of applications, libraries, and developer tools, plus a program to allocate resources and talk to the hardware, known as a kernel.
+      4: The Hurd, GNU's own kernel, is some way from being ready for daily use. Thus, GNU is typically used today with a kernel called Linux. This combination is the GNU/Linux operating system. GNU/Linux is used by millions, though many call it "Linux" by mistake.

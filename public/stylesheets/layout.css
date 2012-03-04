@@ -1,0 +1,261 @@
+/*
+ *  layout.css -- css stylesheet used on hackerspace.by
+ *
+ *  autor: pavel chebotarev <info@chepava.by>
+ *
+ *  2012 pavel chebotarev
+ */
+
+
+html,
+body
+{
+  z-index: 0;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border: 0px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-position: left top;
+  background-repeat: repeat;
+  background-image: url('../images/bg.png');
+  background-color: #d7e0dc;
+  color: #141414;
+  font-weight: normal;
+  font-size: 11px !important;
+  line-height: 15px;
+  font-family: Arial, "Lucida Sans Unicode", Verdana, sans-serif !important;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: center;
+  overflow: auto;
+}
+
+
+#p_head
+{
+  z-index: 5;
+  border: 0px;
+  position: absolute;
+  background: none;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: left;
+}
+
+#head
+{
+  z-index: 5;
+  left: 25%;
+  border: 0px;
+  position: relative;
+  background-position: left top;
+  background-repeat: repeat;
+  background-image: url('../images/bg_p.png');
+  background-color: #b0b8b4;
+  width: 50%;
+  padding: 0px 0px 8px 0px;
+  margin: 32px 0px 0px 0px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: left;
+}
+
+#head #p_logo
+{
+  z-index: 10;
+  border: 0px;
+  position: relative;
+  display: block;
+  background-position: center 24px;
+  background-repeat: no-repeat;
+  background-image: url('../images/logo.png');
+  background-color: none;
+  outline: none;
+  height: 194px;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: left;
+}
+#head #p_logo #p_txt
+{
+  z-index: 10;
+  border: 0px;
+  position: relative;
+  background: none;
+  outline: none;
+  padding: 60px 0px 0px 64px;
+  margin: 0px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: left;
+}
+#head #p_logo #p_txt a.txt,
+#head #p_logo #p_txt a.txt:visited,
+#head #p_logo #p_txt a.txt:active,
+#head #p_logo #p_txt a.txt:hover,
+#head #p_logo #p_txt a.txt:focus
+{
+  z-index: 10;
+  border: 0px;
+  padding: 0px;
+  text-decoration: none;
+  text-transform: none;
+  font-family: Arial, "Lucida Sans Unicode", Verdana, sans-serif !important;
+  line-height: 20px;
+  color: #ffffff;
+  cursor: default;
+  font-size: 16px !important;
+  font-weight: normal;
+  display: block;
+  background: none;
+  outline: none;
+}
+
+
+
+#p_menu
+{
+  z-index: 10;
+  border: none;
+  position: relative;
+  background-color: none;
+  width: 100%;
+  padding: 12px 0px 12px 0px;
+  margin: 0px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: center;
+}
+#p_menu #menu
+{
+  z-index: 10;
+  left: 15%;
+  border: none;
+  position: relative;
+  background: none;
+  width: 70%;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: center;
+}
+#p_menu #menu a.menu,
+#p_menu #menu a.menu:visited,
+#p_menu #menu a.menu:active,
+#p_menu #menu a.menu:hover,
+#p_menu #menu a.menu:focus
+{
+  font-family: Arial, "Lucida Sans Unicode", Verdana, sans-serif !important;
+  margin: 0px;
+  padding: 8px 24px 8px 24px;
+  background-position: left top;
+  background-repeat: repeat;
+  background-image: none;
+  background-color: none;
+  border: none;
+  color: #141414;
+  cursor: default;
+  font-size: 16px !important;
+  line-height: 20px;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+  clear: left;
+}
+#p_menu #menu a.menu:hover
+{
+  cursor: pointer;
+  color: #2c7a54;
+  background-image: url('../images/bg_menu_active.png');
+  background-color: #141414;
+}
+* HTML #p_menu #menu a.menu:hover
+{
+  cursor: hand;
+}
+
+
+#p_data
+{
+  z-index: 10;
+  left: 10%;
+  top: 302px;
+  bottom: 32px;
+  border: 0px;
+  position: absolute;
+  background-position: left top;
+  background-repeat: repeat;
+  background-image: url('../images/bg_p.png');
+  background-color: #b0b8b4;
+  width: 80%;
+  padding: 0px;
+  margin: 22px 32px 22px 32px;
+  margin: 0px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: left;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#p_data #data
+{
+  z-index: 10;
+  border: 0px;
+  position: relative;
+  background: none;
+  padding: 0px;
+  margin: 22px 48px 22px 48px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: left;
+}
+
+#p_cprt
+{
+  z-index: 10;
+  left: 30%;
+  bottom: 8px;
+  border: 0px;
+  position: absolute;
+  background: none;
+  width: 40%;
+  height: 15px;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: center;
+  cursor: default;
+}
+#p_cprt a.c,
+#p_cprt a.c:visited,
+#p_cprt a.c:active,
+#p_cprt a.c:focus,
+#p_cprt a.c:hover
+{
+  font-family: Arial, "Lucida Sans Unicode", Verdana, sans-serif !important;
+  margin: 0px;
+  padding: 0px;
+  background: none;
+  border: none;
+  color: #b0b8b4;
+  cursor: default;
+  font-size: 11px !important;
+  font-weight: normal;
+  line-height: 15px;
+  text-decoration: none;
+  outline: none;
+}
