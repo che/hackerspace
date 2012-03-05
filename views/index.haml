@@ -18,6 +18,7 @@
        %a.txt #{HACKERSPACE::CONFIGURATION[:locales][@locale][:logo][:text][i]}
     %div#p_menu
      %div#menu
+      %a.menu{:href => HACKERSPACE::SEPARATOR + @locale}#{HACKERSPACE::CONFIGURATION[:locales][@locale][:menu][0]}
       %a.menu{:href => "http://wiki#{HACKERSPACE::CHAR_DOT + HACKERSPACE::CONFIGURATION[:domain]}"}#{HACKERSPACE::CONFIGURATION[:locales][@locale][:menu][1]}
       %a.menu{:href => 'http://groups.google.com/group/hackerspace-minsk'}#{HACKERSPACE::CONFIGURATION[:locales][@locale][:menu][2]}
       %a.menu{:href => HACKERSPACE::SEPARATOR + @locale + HACKERSPACE::Site::PATH_IRC}#{HACKERSPACE::CONFIGURATION[:locales][@locale][:menu][3]}

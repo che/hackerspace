@@ -155,11 +155,9 @@ p
 #p_menu #menu
 {
   z-index: 10;
-  left: 15%;
   border: none;
   position: relative;
   background: none;
-  width: 70%;
   padding: 0px;
   margin: 0px;
   text-decoration: none;
