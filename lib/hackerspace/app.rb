@@ -70,7 +70,7 @@ module HACKERSPACE
           @locale = CONFIGURATION[:locale][:default]
         end
       end
-      redirect SEPARATOR + CONFIGURATION[:locale][:default] unless CONFIGURATION[:locale][:list].include?(@locale)
+      @locale = CONFIGURATION[:locale][:default] unless CONFIGURATION[:locale][:list].include?(@locale)
     end
 
   end
