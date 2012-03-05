@@ -171,8 +171,8 @@ p
 #p_menu #menu a.menu:focus
 {
   font-family: Arial, "Lucida Sans Unicode", Verdana, sans-serif !important;
-  margin: 0px;
-  padding: 8px 24px 8px 24px;
+  margin: 4px 0px 4px 0px;
+  padding: 4px 24px 4px 24px;
   background-position: left top;
   background-repeat: repeat;
   background-image: none;
