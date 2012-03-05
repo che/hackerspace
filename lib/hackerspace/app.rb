@@ -16,8 +16,8 @@ module HACKERSPACE
 
     LOCALE_REQUEST_KEY = 'HTTP_ACCEPT_LANGUAGE'
     PATH_LOCALE = "#{SEPARATOR}:locale"
-    PATH_IRC = "#{SEPARATOR}irc"
     PATH_ABOUT = "#{SEPARATOR}about"
+    PATH_CONTACTS = "#{SEPARATOR}contacts"
 
     REG_LOCALE_SEPARATOR1 = /[;]/
     REG_LOCALE_SEPARATOR2 = /[,]/
@@ -42,13 +42,13 @@ module HACKERSPACE
       haml :index
     end
 
-    get PATH_LOCALE + PATH_IRC do
+    get PATH_LOCALE + PATH_ABOUT do
       def_lang
       @head = CONFIGURATION[:locales][@locale][:menu][3]
       haml :index
     end
 
-    get PATH_LOCALE + PATH_ABOUT do
+    get PATH_LOCALE + PATH_CONTACTS do
       def_lang
       @head = CONFIGURATION[:locales][@locale][:menu][4]
       haml :index
