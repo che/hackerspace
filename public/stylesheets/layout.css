@@ -35,6 +35,20 @@ body
   text-align: center;
   overflow: auto;
 }
+p
+{
+  font-family: Arial, "Lucida Sans Unicode", Verdana, sans-serif !important;
+  padding: 0px;
+  background: none;
+  border: none;
+  cursor: default;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+  color: #141414;
+  font-size: 11px !important;
+  line-height: 15px;
+}
 
 
 #p_head
@@ -236,6 +250,7 @@ body
   text-decoration: none;
   text-align: left;
   line-height: 20px;
+  cursor: default;
 }
 a.head
 {
@@ -252,6 +267,7 @@ a.head
   font-size: 16px !important;
   line-height: 20px;
 }
+
 
 
 

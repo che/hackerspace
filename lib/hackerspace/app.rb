@@ -15,10 +15,16 @@ module HACKERSPACE
     disable :sessions
 
     LOCALE_REQUEST_KEY = 'HTTP_ACCEPT_LANGUAGE'
-    LOCALE = ':locale'
+    PATH_LOCALE = "#{SEPARATOR}:locale"
+    PATH_IRC = "#{SEPARATOR}irc"
+    PATH_ABOUT = "#{SEPARATOR}about"
 
     REG_LOCALE_SEPARATOR1 = /[;]/
     REG_LOCALE_SEPARATOR2 = /[,]/
+
+    before do
+      request.path_info = request.path_info.chop if request.path_info =~ REG_SEPARATOR && request.path_info != SEPARATOR
+    end
 
     get "#{SEPARATOR}*.css" do
       content_type "text#{SEPARATOR}css"
@@ -30,12 +36,17 @@ module HACKERSPACE
       redirect SEPARATOR + @locale
     end
 
-    get SEPARATOR + LOCALE + SEPARATOR do
+    get PATH_LOCALE do
       def_lang
-      redirect SEPARATOR + @locale
+      haml :index
     end
 
-    get SEPARATOR + LOCALE do
+    get PATH_LOCALE + PATH_IRC do
+      def_lang
+      haml :index
+    end
+
+    get PATH_LOCALE + PATH_ABOUT do
       def_lang
       haml :index
     end

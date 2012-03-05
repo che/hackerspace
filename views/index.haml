@@ -15,11 +15,13 @@
     %div#p_logo
      %div#p_txt
       - for i in HACKERSPACE::CONFIGURATION[:locales][@locale][:logo][:text].keys.sort
-       %a.txt{:href => HACKERSPACE::SEPARATOR + @locale}#{HACKERSPACE::CONFIGURATION[:locales][@locale][:logo][:text][i]}
+       %a.txt #{HACKERSPACE::CONFIGURATION[:locales][@locale][:logo][:text][i]}
     %div#p_menu
      %div#menu
-      - for i in HACKERSPACE::CONFIGURATION[:locales][@locale][:menu].keys.sort
-       %a.menu{:href => HACKERSPACE::SEPARATOR + @locale}#{HACKERSPACE::CONFIGURATION[:locales][@locale][:menu][i]}
+      %a.menu{:href => "http://wiki#{HACKERSPACE::CHAR_DOT + HACKERSPACE::CONFIGURATION[:domain]}"}#{HACKERSPACE::CONFIGURATION[:locales][@locale][:menu][1]}
+      %a.menu{:href => 'http://groups.google.com/group/hackerspace-minsk'}#{HACKERSPACE::CONFIGURATION[:locales][@locale][:menu][2]}
+      %a.menu{:href => HACKERSPACE::SEPARATOR + @locale + HACKERSPACE::Site::PATH_IRC}#{HACKERSPACE::CONFIGURATION[:locales][@locale][:menu][3]}
+      %a.menu{:href => HACKERSPACE::SEPARATOR + @locale + HACKERSPACE::Site::PATH_ABOUT}#{HACKERSPACE::CONFIGURATION[:locales][@locale][:menu][4]}
   %div#p_data
    %div#data
     %div#t_head
