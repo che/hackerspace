@@ -38,16 +38,19 @@ module HACKERSPACE
 
     get PATH_LOCALE do
       def_lang
+      @head = CONFIGURATION[:locales][@locale][:head][:text]
       haml :index
     end
 
     get PATH_LOCALE + PATH_IRC do
       def_lang
+      @head = CONFIGURATION[:locales][@locale][:menu][3]
       haml :index
     end
 
     get PATH_LOCALE + PATH_ABOUT do
       def_lang
+      @head = CONFIGURATION[:locales][@locale][:menu][4]
       haml :index
     end
 

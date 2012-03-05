@@ -25,7 +25,7 @@
   %div#p_data
    %div#data
     %div#t_head
-     %a.head #{HACKERSPACE::CONFIGURATION[:locales][@locale][:head][:text]}
+     %a.head #{@head}
     - for i in HACKERSPACE::CONFIGURATION[:locales][@locale][:head][:p].keys.sort
      %p #{HACKERSPACE::CONFIGURATION[:locales][@locale][:head][:p][i]}
   %div#p_cprt
@@ -34,3 +34,4 @@
    - else
     %a.c &copy; #{HACKERSPACE::CONFIGURATION[:foundation_year]}-#{Time.now.year} #{HACKERSPACE::NAME.upcase}.
 - remove_instance_variable(:@locale)
+- remove_instance_variable(:@head)
