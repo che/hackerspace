@@ -78,7 +78,7 @@ p
   background-color: #b0b8b4;
   width: 50%;
   padding: 0px 0px 8px 0px;
-  margin: 32px 0px 0px 0px;
+  margin: 18px 0px 0px 0px;
   text-decoration: none;
   text-transform: none;
   text-align: left;
@@ -207,7 +207,7 @@ p
 {
   z-index: 10;
   left: 10%;
-  top: 302px;
+  top: 288px;
   bottom: 32px;
   border: 0px;
   position: absolute;
