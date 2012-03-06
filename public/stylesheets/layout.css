@@ -163,6 +163,7 @@ p
   text-decoration: none;
   text-transform: none;
   text-align: center;
+  cursor: default;
 }
 #p_menu #menu a.menu,
 #p_menu #menu a.menu:visited,
@@ -171,8 +172,8 @@ p
 #p_menu #menu a.menu:focus
 {
   font-family: Arial, "Lucida Sans Unicode", Verdana, sans-serif !important;
-  margin: 4px 0px 4px 0px;
-  padding: 4px 24px 4px 24px;
+  margin: 4px 8px 4px 8px;
+  padding: 4px 16px 4px 16px;
   background-position: left top;
   background-repeat: repeat;
   background-image: none;
