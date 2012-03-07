@@ -39,7 +39,7 @@ module HACKERSPACE
     get PATH_LOCALE do
       def_lang
       @title = CONFIGURATION[:locales][@locale][:head][:text]
-      @path = ''
+      @path = CHAR_EMPTY
       haml :index
     end
 
