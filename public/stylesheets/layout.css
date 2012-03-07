@@ -35,7 +35,8 @@ body
   text-align: center;
   overflow: auto;
 }
-p
+p,
+a
 {
   font-family: Arial, "Lucida Sans Unicode", Verdana, sans-serif !important;
   padding: 0px;
@@ -201,6 +202,7 @@ p
   top: 18px;
   left: 25%;
   width: 50%;
+  height: 248px;
   border: 0px;
   position: absolute;
   padding: 0px;
