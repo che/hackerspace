@@ -21,7 +21,7 @@
      - if i == @locale
       %a.simple #{HACKERSPACE::CONFIGURATION[:locales][i][:name]}
      - else
-      %a.link{:href => HACKERSPACE::SEPARATOR + i}#{HACKERSPACE::CONFIGURATION[:locales][i][:name]}
+      %a.link{:href => HACKERSPACE::SEPARATOR + i + @path}#{HACKERSPACE::CONFIGURATION[:locales][i][:name]}
   %div#p_head
    %div#p_menu
     %div#menu
@@ -33,7 +33,7 @@
   %div#p_data
    %div#data
     %div#p_title
-     %a.title #{@head}
+     %a.title #{@title}
     - for i in HACKERSPACE::CONFIGURATION[:locales][@locale][:head][:p].keys.sort
      %p #{HACKERSPACE::CONFIGURATION[:locales][@locale][:head][:p][i]}
   %div#p_cprt
@@ -42,4 +42,5 @@
    - else
     %a.c &copy; #{HACKERSPACE::CONFIGURATION[:foundation_year]}-#{Time.now.year} #{HACKERSPACE::NAME.upcase}.
 - remove_instance_variable(:@locale)
-- remove_instance_variable(:@head)
+- remove_instance_variable(:@title)
+- remove_instance_variable(:@path)
