@@ -136,6 +136,65 @@ p
 }
 
 
+#p_lang
+{
+  z-index: 10;
+  top: 124px;
+  right: 25%;
+  border: 0px;
+  position: absolute;
+  background: none;
+  outline: none;
+  padding: 0px;
+  margin: 0px 64px 0px 0px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: right;
+}
+#p_lang a.simple,
+#p_lang a.simple:visited,
+#p_lang a.simple:active,
+#p_lang a.simple:hover,
+#p_lang a.simple:focus,
+#p_lang a.link,
+#p_lang a.link:visited,
+#p_lang a.link:active,
+#p_lang a.link:hover,
+#p_lang a.link:focus
+{
+  z-index: 10;
+  border: 0px;
+  padding: 0px;
+  text-decoration: none;
+  text-transform: none;
+  font-family: Arial, "Lucida Sans Unicode", Verdana, sans-serif !important;
+  color: #d7e0dc;
+  font-size: 11px !important;
+  line-height: 15px;
+  font-weight: normal;
+  display: block;
+  background: none;
+  cursor: default;
+  outline: none;
+}
+#p_lang a.link,
+#p_lang a.link:visited,
+#p_lang a.link:active,
+#p_lang a.link:focus
+{
+  text-decoration: underline;
+}
+#p_lang a.link:hover
+{
+  cursor: pointer;
+  text-decoration: none;
+}
+* HTML #p_lang a.link:hover
+{
+  cursor: hand;
+}
+
+
 #p_head
 {
   z-index: 5;

@@ -15,6 +15,13 @@
   %div#p_txt
    - for i in HACKERSPACE::CONFIGURATION[:locales][@locale][:logo][:text].keys.sort
     %a.txt #{HACKERSPACE::CONFIGURATION[:locales][@locale][:logo][:text][i]}
+  %div#p_lang
+   - if HACKERSPACE::CONFIGURATION[:locale][:list].size > 1
+    - for i in HACKERSPACE::CONFIGURATION[:locale][:list]
+     - if i == @locale
+      %a.simple #{HACKERSPACE::CONFIGURATION[:locales][i][:name]}
+     - else
+      %a.link{:href => HACKERSPACE::SEPARATOR + i}#{HACKERSPACE::CONFIGURATION[:locales][i][:name]}
   %div#p_head
    %div#p_menu
     %div#menu

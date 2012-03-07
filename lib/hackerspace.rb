@@ -69,7 +69,6 @@ module HACKERSPACE
         end
         CONFIGURATION[:locales][i][l[0].to_sym] = l[1]
       end
-      CONFIGURATION[:locales][i][:logo][:color] = CONFIGURATION[:locales][i][:logo][:color].split(REG_SPACES) if CONFIGURATION[:locales][i][:logo] && CONFIGURATION[:locales][i][:logo][:color]
     end
     if CONFIGURATION[:locale][:list].include?(CONFIGURATION[:locale][:default])
       @path = File.dirname(File.expand_path(__FILE__)) + SEPARATOR + NAME
