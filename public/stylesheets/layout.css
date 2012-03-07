@@ -51,75 +51,73 @@ p
 }
 
 
-#p_head
+#p_logo
 {
-  z-index: 5;
+  z-index: 10;
+  top: 42px;
+  left: 50%;
   border: 0px;
   position: absolute;
   background: none;
-  width: 100%;
-  height: 100%;
+  outline: none;
   padding: 0px;
-  margin: 0px;
+  margin: 0px 0px 0px -94px;
   text-decoration: none;
   text-transform: none;
   text-align: left;
 }
-
-#head
-{
-  z-index: 5;
-  left: 25%;
-  border: 0px;
-  position: relative;
-  background-position: left top;
-  background-repeat: repeat;
-  background-image: url('../images/bg_p.png');
-  background-color: #b0b8b4;
-  width: 50%;
-  padding: 0px 0px 8px 0px;
-  margin: 18px 0px 0px 0px;
-  text-decoration: none;
-  text-transform: none;
-  text-align: left;
-}
-
-#head #p_logo
+#p_logo a.logo,
+#p_logo a.logo:visited,
+#p_logo a.logo:active,
+#p_logo a.logo:hover,
+#p_logo a.logo:focus
 {
   z-index: 10;
   border: 0px;
   position: relative;
   display: block;
-  background-position: center 24px;
+  background-position: center top;
   background-repeat: no-repeat;
   background-image: url('../images/logo.png');
   background-color: none;
   outline: none;
-  height: 194px;
+  height: 163px;
+  width: 188px;
   padding: 0px;
   margin: 0px;
   text-decoration: none;
   text-transform: none;
-  text-align: left;
 }
-#head #p_logo #p_txt
+#p_logo a.logo:hover
+{
+  cursor: pointer;
+}
+* HTML #p_logo a.logo:hover
+{
+  cursor: hand;
+}
+
+
+#p_txt
 {
   z-index: 10;
+  top: 60px;
+  left: 25%;
   border: 0px;
-  position: relative;
+  position: absolute;
   background: none;
   outline: none;
-  padding: 42px 0px 0px 64px;
-  margin: 0px;
+  padding: 0px;
+  margin: 0px 0px 0px 64px;
   text-decoration: none;
   text-transform: none;
   text-align: left;
 }
-#head #p_logo #p_txt a.txt,
-#head #p_logo #p_txt a.txt:visited,
-#head #p_logo #p_txt a.txt:active,
-#head #p_logo #p_txt a.txt:hover,
-#head #p_logo #p_txt a.txt:focus
+#p_txt a.txt,
+#p_txt a.txt:visited,
+#p_txt a.txt:active,
+#p_txt a.txt:hover,
+#p_txt a.txt:focus
 {
   z-index: 10;
   border: 0px;
@@ -127,26 +125,43 @@ p
   text-decoration: none;
   text-transform: none;
   font-family: Arial, "Lucida Sans Unicode", Verdana, sans-serif !important;
-  line-height: 20px;
   color: #ffffff;
-  cursor: default;
-  font-size: 16px !important;
+  font-size: 17px !important;
+  line-height: 21px;
   font-weight: normal;
   display: block;
   background: none;
+  cursor: default;
   outline: none;
 }
 
 
-
+#p_head
+{
+  z-index: 5;
+  top: 18px;
+  left: 25%;
+  width: 50%;
+  border: 0px;
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  text-transform: none;
+  background-position: left top;
+  background-repeat: repeat;
+  background-image: url('../images/bg_p.png');
+  background-color: #b0b8b4;
+  text-align: left;
+}
 #p_menu
 {
   z-index: 10;
   border: none;
   position: relative;
-  background-color: none;
+  background: none;
   width: 100%;
-  padding: 12px 0px 12px 0px;
+  padding: 187px 0px 0px 0px;
   margin: 0px;
   text-decoration: none;
   text-transform: none;
@@ -158,7 +173,7 @@ p
   border: none;
   position: relative;
   background: none;
-  padding: 0px;
+  padding: 20px 0px 20px 0px;
   margin: 0px;
   text-decoration: none;
   text-transform: none;
@@ -181,8 +196,8 @@ p
   border: none;
   color: #141414;
   cursor: default;
-  font-size: 16px !important;
-  line-height: 20px;
+  font-size: 17px !important;
+  line-height: 21px;
   font-weight: normal;
   text-decoration: none;
   outline: none;
@@ -201,13 +216,11 @@ p
 }
 
 
-
-
 #p_data
 {
   z-index: 10;
   left: 10%;
-  top: 288px;
+  top: 290px;
   bottom: 32px;
   border: 0px;
   position: absolute;
@@ -232,15 +245,15 @@ p
   position: relative;
   background: none;
   padding: 0px;
-  margin: 28px 48px 24px 48px;
+  margin: 26px 48px 26px 48px;
   text-decoration: none;
   text-transform: none;
   text-align: left;
 }
-#t_head
+#p_title
 {
   font-family: Arial, "Lucida Sans Unicode", Verdana, sans-serif !important;
-  margin: 0px 0px 22px 0px;
+  margin: 0px 0px 20px 0px;
   padding: 0px;
   background: none;
   border: none;
@@ -251,7 +264,7 @@ p
   line-height: 20px;
   cursor: default;
 }
-a.head
+#p_title a.title
 {
   font-family: Arial, "Lucida Sans Unicode", Verdana, sans-serif !important;
   margin: 0px;
@@ -263,11 +276,9 @@ a.head
   text-decoration: none;
   outline: none;
   color: #ffffff;
-  font-size: 16px !important;
-  line-height: 20px;
+  font-size: 17px !important;
+  line-height: 21px;
 }
-
-
 
 
 #p_cprt

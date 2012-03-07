@@ -10,23 +10,23 @@
   %link{:rel => 'shortcut icon', :type => 'image/x-icon', :href => "/images/#{HACKERSPACE::NAME}.ico"}
   %link{:rel => 'stylesheet', :href => '/stylesheets/layout.css', :media => 'all', :type => 'text/css'}
  %body
+  %div#p_logo
+   %a.logo{:href => HACKERSPACE::SEPARATOR + @locale}
+  %div#p_txt
+   - for i in HACKERSPACE::CONFIGURATION[:locales][@locale][:logo][:text].keys.sort
+    %a.txt #{HACKERSPACE::CONFIGURATION[:locales][@locale][:logo][:text][i]}
   %div#p_head
-   %div#head
-    %div#p_logo
-     %div#p_txt
-      - for i in HACKERSPACE::CONFIGURATION[:locales][@locale][:logo][:text].keys.sort
-       %a.txt #{HACKERSPACE::CONFIGURATION[:locales][@locale][:logo][:text][i]}
-    %div#p_menu
-     %div#menu
-      %a.menu{:href => HACKERSPACE::SEPARATOR + @locale}#{HACKERSPACE::CONFIGURATION[:locales][@locale][:menu][0]}
-      %a.menu{:href => "http://wiki#{HACKERSPACE::CHAR_DOT + HACKERSPACE::CONFIGURATION[:domain]}"}#{HACKERSPACE::CONFIGURATION[:locales][@locale][:menu][1]}
-      %a.menu{:href => 'http://groups.google.com/group/hackerspace-minsk'}#{HACKERSPACE::CONFIGURATION[:locales][@locale][:menu][2]}
-      %a.menu{:href => HACKERSPACE::SEPARATOR + @locale + HACKERSPACE::Site::PATH_ABOUT}#{HACKERSPACE::CONFIGURATION[:locales][@locale][:menu][3]}
-      %a.menu{:href => HACKERSPACE::SEPARATOR + @locale + HACKERSPACE::Site::PATH_CONTACTS}#{HACKERSPACE::CONFIGURATION[:locales][@locale][:menu][4]}
+   %div#p_menu
+    %div#menu
+     %a.menu{:href => HACKERSPACE::SEPARATOR + @locale}#{HACKERSPACE::CONFIGURATION[:locales][@locale][:menu][0]}
+     %a.menu{:href => "http://wiki#{HACKERSPACE::CHAR_DOT + HACKERSPACE::CONFIGURATION[:domain]}"}#{HACKERSPACE::CONFIGURATION[:locales][@locale][:menu][1]}
+     %a.menu{:href => 'http://groups.google.com/group/hackerspace-minsk'}#{HACKERSPACE::CONFIGURATION[:locales][@locale][:menu][2]}
+     %a.menu{:href => HACKERSPACE::SEPARATOR + @locale + HACKERSPACE::Site::PATH_ABOUT}#{HACKERSPACE::CONFIGURATION[:locales][@locale][:menu][3]}
+     %a.menu{:href => HACKERSPACE::SEPARATOR + @locale + HACKERSPACE::Site::PATH_CONTACTS}#{HACKERSPACE::CONFIGURATION[:locales][@locale][:menu][4]}
   %div#p_data
    %div#data
-    %div#t_head
-     %a.head #{@head}
+    %div#p_title
+     %a.title #{@head}
     - for i in HACKERSPACE::CONFIGURATION[:locales][@locale][:head][:p].keys.sort
      %p #{HACKERSPACE::CONFIGURATION[:locales][@locale][:head][:p][i]}
   %div#p_cprt
