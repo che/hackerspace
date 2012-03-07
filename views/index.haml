@@ -37,10 +37,7 @@
     - for i in HACKERSPACE::CONFIGURATION[:locales][@locale][:head][:p].keys.sort
      %p #{HACKERSPACE::CONFIGURATION[:locales][@locale][:head][:p][i]}
   %div#p_cprt
-   - if HACKERSPACE::CONFIGURATION[:foundation_year] == Time.now.year
-    %a.c &copy; #{HACKERSPACE::CONFIGURATION[:foundation_year]} #{HACKERSPACE::NAME.upcase}.
-   - else
-    %a.c &copy; #{HACKERSPACE::CONFIGURATION[:foundation_year]}-#{Time.now.year} #{HACKERSPACE::NAME.upcase}.
+   %a.c &copy; #{((HACKERSPACE::CONFIGURATION[:foundation_year] == Time.now.year)?(HACKERSPACE::CHAR_EMPTY):(HACKERSPACE::FOUNDATION_YEAR_STR))}#{Time.now.year} #{HACKERSPACE::NAME.upcase}.
 - remove_instance_variable(:@locale)
 - remove_instance_variable(:@title)
 - remove_instance_variable(:@path)

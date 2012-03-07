@@ -15,6 +15,9 @@ module HACKERSPACE
     disable :sessions
 
     LOCALE_REQUEST_KEY = 'HTTP_ACCEPT_LANGUAGE'
+
+    FOUNDATION_YEAR_STR = "#{CONFIGURATION[:foundation_year]}- "
+
     PATH_LOCALE = "#{SEPARATOR}:locale"
     PATH_ABOUT = "#{SEPARATOR}about"
     PATH_CONTACTS = "#{SEPARATOR}contacts"

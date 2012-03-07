@@ -46,6 +46,7 @@ module HACKERSPACE
     CONFIGURATION[:email] = CONFIGURATION[:email] + CHAR_DOG + CONFIGURATION[:domain] if CONFIGURATION[:email] && !CONFIGURATION[:email][CHAR_DOG]
     CONFIGURATION[:sites] = CONFIGURATION[:sites].split(REG_SPACES) if CONFIGURATION[:sites]
     CONFIGURATION[:html] = CONFIGURATION[:html].to_sym if CONFIGURATION[:html]
+    CONFIGURATION[:foundation_year] = Time.now.year unless CONFIGURATION[:foundation_year]
     if CONFIGURATION[:locale]
       CONFIGURATION[:locale][:list] = CONFIGURATION[:locale][:list].split(REG_SPACES) if CONFIGURATION[:locale][:list]
       CONFIGURATION[:locale][:default] = LOCALE_DEFAULT unless CONFIGURATION[:locale][:default]
@@ -80,6 +81,7 @@ module HACKERSPACE
     for i in instance_variables do
       remove_instance_variable(i)
     end
+    CONFIGURATION.freeze
   end
 
 end
