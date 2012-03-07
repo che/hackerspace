@@ -58,17 +58,19 @@ module HACKERSPACE
     end
 
     not_found do
-      redirect SEPARATOR
+      def_lang
+      redirect SEPARATOR + @locale
     end
 
     error do
-      redirect SEPARATOR
+      def_lang
+      redirect SEPARATOR + @locale
     end
 
     private
 
     def def_lang
-      @locale = params[:locale].to_s
+      @locale = ((params[:locale])?(params[:locale]):(request.path_info.split(SEPARATOR)[1])).to_s
       if @locale.empty?
         begin
           @locale = request.env[LOCALE_REQUEST_KEY].split(REG_LOCALE_SEPARATOR1)[0].split(REG_LOCALE_SEPARATOR2)[-1]
