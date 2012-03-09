@@ -62,7 +62,7 @@ a
   background: none;
   outline: none;
   padding: 0px;
-  margin: 0px 0px 0px -94px;
+  margin: 0px 0px 0px -74px;
   text-decoration: none;
   text-transform: none;
   text-align: left;
@@ -82,8 +82,8 @@ a
   background-image: url('../images/logo.png');
   background-color: none;
   outline: none;
-  height: 163px;
-  width: 188px;
+  height: 111px;
+  width: 148px;
   padding: 0px;
   margin: 0px;
   text-decoration: none;
@@ -140,7 +140,7 @@ a
 #p_lang
 {
   z-index: 10;
-  top: 124px;
+  top: 93px;
   right: 25%;
   border: 0px;
   position: absolute;
@@ -202,7 +202,7 @@ a
   top: 18px;
   left: 25%;
   width: 50%;
-  height: 248px;
+  height: 196px;
   border: 0px;
   position: absolute;
   padding: 0px;
@@ -222,7 +222,7 @@ a
   position: relative;
   background: none;
   width: 100%;
-  padding: 187px 0px 0px 0px;
+  padding: 135px 0px 0px 0px;
   margin: 0px;
   text-decoration: none;
   text-transform: none;
@@ -281,7 +281,7 @@ a
 {
   z-index: 10;
   left: 10%;
-  top: 290px;
+  top: 238px;
   bottom: 32px;
   border: 0px;
   position: absolute;
